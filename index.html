@@ -32,7 +32,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            Gradient Projection For Parameter-Efficient Continual Learning
+            Gradient Projection For Conitinual Parameter-Efficient Tuning
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -47,6 +47,9 @@
 	    <span class="author-block">
               <a>Wensheng Zhang</a><sup>3</sup>,</span>
             </span>
+	    <span class="author-block">
+              <a>Zhi Han</a><sup>4</sup>,</span>
+            </span>
             <span class="author-block">
               <a href="https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp">Yuan Xie</a><sup>1†</sup>,
             </span>
@@ -55,7 +58,8 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>East China Normal University,</span>
 	    <span class="author-block"><sup>2</sup>Xiamen University,</span>
-	    <span class="author-block"><sup>3</sup>Institute of Automation, Chinese Academy of Sciences,</span>  
+	    <span class="author-block"><sup>3</sup>Institute of Automation, Chinese Academy of Sciences,</span>
+            <span class="author-block"><sup>3</sup>Shenyang Institute of Automation, Chinese Academy of Sciences,</span>
           </div>
           
           <div class="is-size-5 publication-authors">
@@ -66,7 +70,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                <a href="https://arxiv.org/abs/2405.13383" class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                   </span>
@@ -112,6 +116,9 @@
 			<p>
 				The latest update is in <span style="color: red;">2024/5/22</span>.
 			</p>
+			<p>
+				For more information, please kindly reffer to our lab homepage <a href="https://dmcv-ecnu.github.io/">.
+			</p>
 		</div>
 	  </div>
 	</div>
@@ -138,13 +145,13 @@
 			The gradient projection methodology restricts gradient updates to the orthogonal direction of the old feature space, preventing distribution of the parameters from being damaged during updating and suppressing forgetting.
 		  </p>
 		  <p>
-			Developing on it, in this paper, we reformulate Adapter, LoRA, Prefix, and Prompt to continual learning setting from the perspective of gradient projection, and propose a unified framework called <strong><u>E</u></strong>fficient <strong><u>P</u></strong>arameter <strong><u>G</u></strong>radient <strong><u>P</u></strong>rojection (EPGP), 
+			Developing on it, in this paper, we reformulate Adapter, LoRA, Prefix, and Prompt to continual learning setting from the perspective of gradient projection, and propose a unified framework called <strong><u>P</u></strong>arameter <strong><u>E</u></strong>fficient <strong><u>G</u></strong>radient <strong><u>P</u></strong>rojection (PEGP), 
 			Based on the condition that old tasks should have the same results after model updated, we introduce orthogonal gradient projection into different PET paradigms and theoretically demonstrate that the orthogonal condition for the gradient can effectively resist forgetting in PET-based continual methods.
 			Notably, PEGP is the first unified method to provide an anti-forgetting mechanism with mathematical demonstration for different tuning paradigms.
 		  </p>
 		  <p>
 			Additionally, through experiments on a novel cross-modality dataset BITM, we further discover that PEGP can not only alleviate forgetting but also suppress the appearance of hallucination during continual learning process, which provide a new insight for addressing hallucination in the cross-modality continual learning. 
-			Additionally, by conducting Singular Value Decomposition (SVD) to obtain gradient projection matrix, EPGP is proved as the optimal solution to balance the trade-off between plasticity and stability in PET continual learning methods. 
+			Additionally, by conducting Singular Value Decomposition (SVD) to obtain gradient projection matrix, PEGP is proved as the optimal solution to balance the trade-off between plasticity and stability in PET continual learning methods. 
 		  </p>
 		  <p>
 			We extensively evaluate our method with different backbones on diverse datasets, and experiments demonstrate its efficiency in reducing forgetting in class incremental, online class incremental, domain incremental, task incremental, and multi-modality incremental settings.
